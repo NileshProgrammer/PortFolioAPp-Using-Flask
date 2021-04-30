@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
-    return "Hello World this app is deployed to Heroku App with pipeline"
+    return render_template('index.html')
