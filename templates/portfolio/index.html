@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/portfolio/style.css')}}">
 </head>
 
 <body>
@@ -21,7 +24,79 @@
         <button class="nav-toggler" aria-label="Toggle navigation">
             <span class="hamburger"></span>
         </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi I am <strong>Nilesh Rawool</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> Backend Developer</p>
+        <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+    </section>
+
+    <!-- About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am ..</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+        <div class="about-me__body">
+            <p></p>
+            <p></p>
+        </div>
+        <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title"> My Work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+
+            <!-- Portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="{{url_for('static',filename='images/portfolio/logo_size.jpg')}}" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="footer--link">nilraw@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#">GitHub</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">LinkedIn</a></li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>

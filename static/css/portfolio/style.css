@@ -1,0 +1,15 @@
+*
+*::before
+*::after{
+    box-sizing: border-box
+}
+:root {
+    -ff-priamry:'Zilla Slab', serif;
+    --ff-secondary: 'Zilla Slab',monospace;
+
+    --fw-reg :300;
+    --fw-bold:900;
+
+    --clr-light: #ffff;
+    
+}
